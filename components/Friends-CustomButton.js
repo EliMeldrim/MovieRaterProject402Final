@@ -3,14 +3,16 @@ import styles from '../styles/Styles.js';
 
 export default function CustomButton(props) {
   return (
-    <TouchableOpacity onPress= {() => props.click()}
-    style = {props.buttonStyle}>
-      <View >
-      <Text style = {props.textStyle}>
+    <Pressable style= {({pressed}) => {
+      return pressed ? styles.pressed : styles.notpressed;
+    }}
+    onPress= {() => props.click()}>
+      <View style = {styles.buttons}>
+      <Text style = {styles.buttonTitle}>
       {props.name}
         </Text>
       </View>
-    </TouchableOpacity>
+    </Pressable>
   )
 }
 
