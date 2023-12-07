@@ -22,6 +22,10 @@ const Friend = (props) => {
 
  function seeFriendProfile() {
    console.log("Page navigated to friend's profile");
+   const LoadProfile = props => (
+    <ProfilePage user={props.label} />
+    );
+   return <Stack.Screen name="Profile" component={LoadProfile} />;
  }
  
  function showOptions() {
