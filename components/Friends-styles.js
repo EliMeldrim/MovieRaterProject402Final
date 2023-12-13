@@ -74,7 +74,6 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     fontSize: 25,
     color: color1,
-    fontWeight: 900,
   },
 
   smallPhoto: {
