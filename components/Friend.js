@@ -1,11 +1,10 @@
-import styles from '../styles/Styles.js';
+import styles from '../styles/FriendsStyles.js';
 import React, {useState} from 'react';
 import ImageButton from './ImageButton.js';
-import CustomButton from '../styles/FriendsStyles.js';
-import { Image, Pressable,TouchableOpacity, Button, FlatList, StyleSheet, Text, View, ListItem } from 'react-native';
+import {Text, View} from 'react-native';
 
 const Friend = (props) => {
-  const renderItem = ({ item, index}) => {
+  const renderItem = ({ item }) => {
        return (
          <View  style={{
               flex: 1,
@@ -17,7 +16,7 @@ const Friend = (props) => {
          </View>
     );
  };
-
+ //WIP See detailed information about friend's profile 
  function seeFriendProfile() {
    console.log("Page navigated to friend's profile");
  }
