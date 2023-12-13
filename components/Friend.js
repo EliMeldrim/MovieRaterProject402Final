@@ -1,7 +1,7 @@
 import styles from '../styles/FriendsStyles.js';
 import React, {useState} from 'react';
 import ImageButton from './ImageButton.js';
-import {Text, View} from 'react-native';
+import {Text, View, VirtualizedList} from 'react-native';
 
 const Friend = (props) => {
   const renderItem = ({ item }) => {
